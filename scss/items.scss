@@ -1,0 +1,40 @@
+/* All buttons */
+
+.btn-bg-color
+{
+    background-color: var(--bg);
+    border-radius: 50px;
+    color: var(--white);
+    padding: 13px 30px;
+    text-align: center;
+}
+.btn-bg-color:hover
+{
+    background-color: var(--bg-hover);
+    color: var(--white);
+    opacity: 0.8;
+}
+.btn-bg
+{
+    background-color: var(--bg-hover);    
+    border-radius: 50px;
+    color: var(--white);
+    padding: 13px 30px;
+    text-align: center;
+}
+.btn-bg-g
+{
+    background-color: var(--gray);
+    border-radius: 50px;
+    color: var(--bg);
+    padding: 13px 30px;
+    text-align: center;
+}
+.btn-bg-g:hover
+{
+    background-color: var(--bg-hover);
+    border-radius: 50px;
+    color: var(--white);
+    fill: var(--white);
+    padding: 13px 30px;
+}

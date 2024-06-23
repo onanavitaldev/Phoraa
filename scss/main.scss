@@ -1,0 +1,93 @@
+*
+{
+    font-family: var(--font);
+}
+*::selection
+{
+    background-color: var(--bg);
+    color: var(--white);
+}
+
+header
+{
+    background-color: #fff;
+    // background-image: linear-gradient(to top, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.886));
+    // backdrop-filter: blur(12px);
+	// -webkit-backdrop-filter: blur(12px);
+}
+
+nav
+{
+    ul
+    {
+        li
+        {
+            a
+            {
+                color: #000;   
+                outline: none;            
+            }
+            a:hover
+            {
+                color: var(--bg);
+            }
+        }
+    }
+}
+
+main
+{
+    a
+    {
+        z-index: 600;
+    }
+    .marketing
+    {
+        background-image: linear-gradient(to right, rgb(12, 33, 21) 55%, rgb(26, 77, 46));
+    }
+}
+
+#upload_box
+{
+    #svg
+    {
+        animation: zoom linear infinite 1s;
+    }
+    @keyframes zoom
+    {
+        0%
+        {
+            transform: scale(1.1);
+        }
+        50%
+        {
+            transform: scale(1);
+        }
+        100%
+        {
+            transform: scale(1.1);
+        }
+    }
+    input
+    {
+        border: 1px solid #ddd;
+        padding-left: 20px;
+    }
+    input[type="text"]:focus
+    {
+        border: 1px solid var(--bg);
+    }
+}
+
+#open_tools 
+{
+  z-index: 999;
+  position: fixed;
+  place-items: center;
+  cursor: pointer;
+  bottom: 2rem;
+  outline: none;
+  padding: 0.3em;
+  animation: fadeInUp 1s;
+  transition: all 0.3s ease-in 0s;
+}
